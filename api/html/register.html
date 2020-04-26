@@ -16,14 +16,6 @@
                             <h5 class="card-title">Register to get nofiication for each case</h5>
                             <div class="row">
                                 <div class="col-md-6">
-                                    Enter name
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" id="name" class="form-control" >
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
                                     Enter phone number
                                 </div>
                                 <div class="col-md-6">
@@ -77,7 +69,6 @@
             $('#contact').click(function(e) {
                 $('#conact_response').text('');
                 var data = {
-                    "name": $('#name').val(),
                     "phone_number": $('#phone_number').val(),
                     "state_code": $('#state_list').val()
                 }

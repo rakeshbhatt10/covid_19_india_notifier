@@ -1,0 +1,1 @@
+from notifier.processor import start_covid_19_processor

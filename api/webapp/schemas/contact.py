@@ -7,10 +7,6 @@ from jsonschema import validators
 request_contact = {
     "type": "object",
     "properties":  {
-        "name": {
-            "type": "string",
-            "minLength": 2
-        },
         "phone_number": {
             "type": "string",
             "minLength": 2
@@ -18,9 +14,13 @@ request_contact = {
         "state_code": {
             "type": "string",
             "minLength": 4
+        },
+        "district_code": {
+            "type": "string",
+            "minLength": 4
         }
     },
-    "required": ["phone_number", "name", "state_code"],
+    "required": ["phone_number", "state_code"],
     "additionalProperties": False
 }
 

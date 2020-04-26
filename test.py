@@ -1,4 +1,4 @@
-from notifier.seed import insert_state_list
+from notifier import start_covid_19_processor
 
 if __name__ == "__main__":
-    insert_state_list()
+    start_covid_19_processor()
