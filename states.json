@@ -1,0 +1,224 @@
+[
+  {
+    "category": "state",
+    "code": "in-ap",
+    "name": "andhra pradesh",
+    "label": "Andhra Pradesh"
+  },
+  {
+    "category": "state",
+    "code": "in-ar",
+    "name": "arunachal pradesh",
+    "label": "Arunachal Pradesh"
+  },
+  {
+    "category": "state",
+    "code": "in-as",
+    "name": "assam",
+    "label": "Assam"
+  },
+  {
+    "category": "state",
+    "code": "in-br",
+    "name": "bihar",
+    "label": "Bihar"
+  },
+  {
+    "category": "state",
+    "code": "in-ct",
+    "name": "chhattisgarh",
+    "label": "Chhattisgarh"
+  },
+  {
+    "category": "state",
+    "code": "in-ga",
+    "name": "goa",
+    "label": "Goa"
+  },
+  {
+    "category": "state",
+    "code": "in-gj",
+    "name": "gujarat",
+    "label": "Gujarat"
+  },
+  {
+    "category": "state",
+    "code": "in-hr",
+    "name": "haryana",
+    "label": "Haryana"
+  },
+  {
+    "category": "state",
+    "code": "in-hp",
+    "name": "himachal pradesh",
+    "label": "Himachal Pradesh"
+  },
+  {
+    "category": "state",
+    "code": "in-jh",
+    "name": "jharkhand",
+    "label": "Jharkhand"
+  },
+  {
+    "category": "state",
+    "code": "in-ka",
+    "name": "karnataka",
+    "label": "Karnataka"
+  },
+  {
+    "category": "state",
+    "code": "in-kl",
+    "name": "kerala",
+    "label": "Kerala"
+  },
+  {
+    "category": "state",
+    "code": "in-mp",
+    "name": "madhya pradesh",
+    "label": "Madhya Pradesh"
+  },
+  {
+    "category": "state",
+    "code": "in-mh",
+    "name": "maharashtra",
+    "label": "Maharashtra"
+  },
+  {
+    "category": "state",
+    "code": "in-mn",
+    "name": "manipur",
+    "label": "Manipur"
+  },
+  {
+    "category": "state",
+    "code": "in-ml",
+    "name": "meghalaya",
+    "label": "Meghalaya"
+  },
+  {
+    "category": "state",
+    "code": "in-mz",
+    "name": "mizoram",
+    "label": "Mizoram"
+  },
+  {
+    "category": "state",
+    "code": "in-nl",
+    "name": "nagaland",
+    "label": "Nagaland"
+  },
+  {
+    "category": "state",
+    "code": "in-or",
+    "name": "odisha",
+    "label": "Odisha"
+  },
+  {
+    "category": "state",
+    "code": "in-pb",
+    "name": "punjab",
+    "label": "Punjab"
+  },
+  {
+    "category": "state",
+    "code": "in-rj",
+    "name": "rajasthan",
+    "label": "Rajasthan"
+  },
+  {
+    "category": "state",
+    "code": "in-sk",
+    "name": "sikkim",
+    "label": "Sikkim"
+  },
+  {
+    "category": "state",
+    "code": "in-tn",
+    "name": "tamil nadu",
+    "label": "Tamil Nadu"
+  },
+  {
+    "category": "state",
+    "code": "in-tg",
+    "name": "telangana",
+    "label": "Telangana"
+  },
+  {
+    "category": "state",
+    "code": "in-tr",
+    "name": "tripura",
+    "label": "Tripura"
+  },
+  {
+    "category": "state",
+    "code": "in-ut",
+    "name": "uttarakhand",
+    "label": "Uttarakhand"
+  },
+  {
+    "category": "state",
+    "code": "in-up",
+    "name": "uttar pradesh",
+    "label": "Uttar Pradesh"
+  },
+  {
+    "category": "state",
+    "code": "in-wb",
+    "name": "west bengal",
+    "label": "West Bengal"
+  },
+  {
+    "category": "union territory",
+    "code": "in-an",
+    "name": "andaman and nicobar islands",
+    "label": "Andaman and Nicobar Islands"
+  },
+  {
+    "category": "union territory",
+    "code": "in-ch",
+    "name": "chandigarh",
+    "label": "Chandigarh"
+  },
+  {
+    "category": "union territory",
+    "code": "in-dn",
+    "name": "dadra and nagar haveli",
+    "label": "Dadra and Nagar Haveli"
+  },
+  {
+    "category": "union territory",
+    "code": "in-dd",
+    "name": "daman and diu",
+    "label": "Daman and Diu"
+  },
+  {
+    "category": "union territory",
+    "code": "in-dl",
+    "name": "delhi",
+    "label": "Delhi"
+  },
+  {
+    "category": "union territory",
+    "code": "in-jk",
+    "name": "jammu and kashmir",
+    "label": "Jammu and Kashmir"
+  },
+  {
+    "category": "union territory",
+    "code": "in-la",
+    "name": "ladakh",
+    "label": "Ladakh"
+  },
+  {
+    "category": "union territory",
+    "code": "in-ld",
+    "name": "lakshadweep",
+    "label": "Lakshadweep"
+  },
+  {
+    "category": "union territory",
+    "code": "in-py",
+    "name": "puducherry",
+    "label": "Puducherry"
+  }
+]

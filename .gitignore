@@ -1,0 +1,5 @@
+env
+*.pyc
+*.bson
+local_settings.py
+.idea

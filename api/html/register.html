@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js" ></script>
+</head>
+<body>
+    <div class="container h-100">
+         <div class="row h-100 justify-content-center align-items-center">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="card">
+                         <div class="card-body">
+                            <h5 class="card-title">Register to get nofiication for each case</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Enter name
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" id="name" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Enter phone number
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" id="phone_number" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Select state
+                                </div>
+                                <div class="col-md-6">
+                                    <select id="state_list" class="form-control">
+                                        <option value="-1" style="display:none;"> Choose State</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button id="contact" class="btn btn-primary">
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span class="text-danger" id="conact_response">
+                                    </span>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+    $( document ).ready(function() {
+        console.log( "ready!" );
+         $.getJSON( "states.json", function( data ) {
+
+              $.each( data, function( key, val ) {
+                $('#state_list').append($('<option/>', {
+                    value: val.code,
+                    text : val.label
+                }));
+              });
+            });
+
+            $('#contact').click(function(e) {
+                $('#conact_response').text('');
+                var data = {
+                    "name": $('#name').val(),
+                    "phone_number": $('#phone_number').val(),
+                    "state_code": $('#state_list').val()
+                }
+
+                console.log("You clicked contact button");
+                $.ajax({type: 'POST',
+                    url: 'register_contact',
+                    data: JSON.stringify(data),
+                    success: function(data) {
+                        $('#conact_response').text('Contact is added/updated for notifications');
+                    },
+                    error: function(data) {
+                       console.log("data : ", data.responseJSON);
+                       var message = data.responseJSON.message;
+
+                       if (data.responseJSON.key) {
+                          message = data.responseJSON.key + " "+message;
+                       }
+
+                       $('#conact_response').text(message);
+                    },
+                    contentType: "application/json",
+                    dataType: 'json'
+                });
+            });
+    });
+
+    </script>
+</html>
